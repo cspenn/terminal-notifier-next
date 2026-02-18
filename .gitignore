@@ -1,9 +1,23 @@
-.*.sw?
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode / Swift
 DerivedData
 xcuserdata
-Ruby/*.zip
-Ruby/*.gem
-Ruby/vendor
-build
+.build/
+*.xcuserstate
+Package.resolved
+
+# App bundles (build output)
+*.app
+
+# vim swapfiles
+.*.sw?
+
+# Archived legacy code (kept locally, not in repo)
+archive/
+
+# Worktrees
 .worktrees/
