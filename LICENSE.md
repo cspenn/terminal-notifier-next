@@ -1,6 +1,7 @@
-All the works are available under the MIT license. Except for ‘Terminal.icns’, which is a copy of Apple’s Terminal.app icon and as such is copyright of Apple.
+All the works are available under the MIT license. Except for 'Terminal.icns', which is a copy of Apple's Terminal.app icon and as such is copyright of Apple.
 
-Copyright (C) 2012-2016 Eloy Durán eloy.de.enige@gmail.com, Julien Blanchard julien@sideburns.eu
+Copyright (C) 2012–2024 Eloy Durán eloy.de.enige@gmail.com, Julien Blanchard julien@sideburns.eu
+Copyright (C) 2024–2026 Christopher Penn cspenn@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

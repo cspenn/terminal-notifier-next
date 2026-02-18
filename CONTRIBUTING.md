@@ -1,42 +1,43 @@
 # How to contribute
 
-I like to encourage you to contribute to the repository.
-This should be as easy as possible for you but there are a few things to consider when contributing.
-The following guidelines for contribution should be followed if you want to submit a pull request.
+Contributions are welcome. Please follow these guidelines when submitting a pull request.
 
-## How to prepare
+## Getting started
 
 * You need a [GitHub account](https://github.com/signup/free)
-* Submit an [issue ticket](https://github.com/julienXX/terminal-notifier/issues) for your issue if there is no one yet.
-	* Describe the issue and include steps to reproduce if it's a bug.
-	* Ensure to mention the earliest version that you know is affected.
-* If you are able and want to fix this, fork the repository on GitHub
+* Check [existing issues](https://github.com/cspenn/terminal-notifier-next/issues) before opening a new one
+  * For bugs, describe the issue and include steps to reproduce it
+  * Mention the earliest version affected
+* Fork the repository if you want to submit a fix
 
-## Make Changes
+## Building
 
-* In your forked repository, create a topic branch for your upcoming patch. (e.g. `feature--autoplay` or `bugfix--ios-crash`)
-	* Usually this is based on the master branch.
-	* Create a branch based on master; `git branch
-	fix/master/my_contribution master` then checkout the new branch with `git
-	checkout fix/master/my_contribution`.  Please avoid working directly on the `master` branch.
-* Make sure you stick to the coding style that is used already.
-* Make commits of logical units and describe them properly.
-* Check for unnecessary whitespace with `git diff --check` before committing.
+Requires Xcode Command Line Tools (macOS 10.15+).
 
-* If possible, submit tests to your patch / new feature so it can be tested easily.
-* Assure nothing is broken by running all the tests.
+```bash
+# Build the release binary
+swift build -c release
 
-## Submit Changes
+# Build and package as an .app bundle
+./scripts/build-bundle.sh
+```
 
-* Push your changes to a topic branch in your fork of the repository.
-* Open a pull request to the original repository and choose the right original branch you want to patch.
-	_Advanced users may install the `hub` gem and use the [`hub pull-request` command](https://hub.github.com/hub.1.html)._
-* If not done in commit messages (which you really should do) please reference and update your issue with the code changes. But _please do not close the issue yourself_.
-_Notice: You can [turn your previously filed issues into a pull-request here](http://issue2pr.herokuapp.com/)._
-* Even if you have write access to the repository, do not directly push or merge pull-requests. Let another team member review your pull request and approve.
+See [README.md](README.md) for full installation instructions.
 
-# Additional Resources
+## Making changes
 
-* [General GitHub documentation](http://help.github.com/)
-* [GitHub pull request documentation](https://help.github.com/articles/about-pull-requests/)
-* [Read the Issue Guidelines by @necolas](https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md) for more details
+* Create a topic branch from `master` for your work (e.g. `fix/piped-stdin` or `feature/new-flag`)
+* Keep commits logical and well-described
+* Run `swift build -c release` before submitting to confirm a clean build
+* If adding a new flag, update the help text in `Notifier.swift` and the README
+
+## Submitting a pull request
+
+* Push your branch to your fork and open a pull request against `master`
+* Reference the issue your PR addresses
+* Do not merge your own pull request — wait for a review
+
+## Additional resources
+
+* [GitHub documentation](https://docs.github.com)
+* [GitHub pull request documentation](https://docs.github.com/en/pull-requests)
