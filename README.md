@@ -52,7 +52,7 @@ echo "msg" | terminal-notifier-next [options]
 | `--terminal-alert` | Flash the calling terminal window |
 | `--terminal-alert-color <c>` | Color: `red` `green` `blue` `yellow` `orange` `purple` `cyan` (default: `red`) |
 | `--version` | Print version |
-| `--help` | Show help |
+| `--help`, `-h` | Show help |
 
 ### Exit codes
 
@@ -101,6 +101,6 @@ The release binary is ~160KB with no external dependencies.
 
 MIT. See [LICENSE.md](LICENSE.md).
 
-Copyright © 2012–2024 terminal-notifier contributors.
+Copyright © 2012–2026 terminal-notifier contributors.
 
-`Terminal.icns` is a copy of Apple's Terminal.app icon and is copyright Apple.
+`Terminal.icns` is a custom icon generated from `icon-source.svg`.

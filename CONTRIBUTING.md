@@ -4,7 +4,7 @@ Contributions are welcome. Please follow these guidelines when submitting a pull
 
 ## Getting started
 
-* You need a [GitHub account](https://github.com/signup/free)
+* You need a [GitHub account](https://github.com/signup)
 * Check [existing issues](https://github.com/cspenn/terminal-notifier-next/issues) before opening a new one
   * For bugs, describe the issue and include steps to reproduce it
   * Mention the earliest version affected
